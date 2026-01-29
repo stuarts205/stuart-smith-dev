@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/button";
 import { Menu, X } from "lucide-react";
 
@@ -11,14 +11,25 @@ const navLinks = [
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const title = '<stuart-smith.dev />';
+  const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const HandleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener("scroll", HandleScroll);
+        return () => window.removeEventListener("scroll", HandleScroll);
+    }, []);
+
   return (
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-5">
+    <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-bold tracking-tight hover:text-primary"
+          className="text-xl font-bold tracking-tight hover:text-primary items-center flex"
         >
-          PM<span className="text-primary">.</span>
+          <span className="text-white">{title}</span>
         </a>
 
         {/* Desktop Nav */}
