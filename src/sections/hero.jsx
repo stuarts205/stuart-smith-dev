@@ -4,6 +4,7 @@ import {
   ChevronDown,
   Github,
   Linkedin,
+  Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/animated-border-button";
 import React, { useEffect, useState } from "react";
@@ -96,7 +97,10 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton />
+              <AnimatedBorderButton>
+                <Download className="w-5 h-5" />
+                  Download CV
+              </AnimatedBorderButton>
             </div>
             <div className="flex items-center gap-4 animate-fade-in animation-delay-500">
               <span className="text-sm text-muted-foreground">Find me:</span>
