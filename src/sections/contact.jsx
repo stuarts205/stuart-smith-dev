@@ -171,7 +171,7 @@ export const Contact = () => {
                 />
               </div>
               <Button
-                className="w-full"
+                className="w-full cursor-pointer"
                 type="submit"
                 size="lg"
                 disabled={isLoading}

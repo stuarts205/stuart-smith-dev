@@ -47,10 +47,11 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a href="#contact">
+            <Button size="sm">Contact Me</Button>
+          </a>          
         </div>
 
-        {/* Mobile Menu button */}
         <button
           className="md:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}

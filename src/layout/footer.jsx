@@ -22,7 +22,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
 
           <div className="text-center md:text-left">
-            <a href="/" className="text-xl font-bold tracking-tight">
+            <a href="#" className="text-xl font-bold tracking-tight">
               {title}
             </a>
             <p className="text-sm text-muted-foreground mt-2">
@@ -45,7 +45,7 @@ export const Footer = () => {
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
               <a
-                _target="_blank"
+                target="_blank"
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
@@ -55,7 +55,6 @@ export const Footer = () => {
               </a>
             ))}
           </div>
-
         </div>
       </div>
     </footer>
