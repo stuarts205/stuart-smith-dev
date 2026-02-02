@@ -101,7 +101,7 @@ export const Experience = () => {
                   }`}
                 >
                   <div
-                    className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
+                    className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500 text-left`}
                   >
                     <span className="text-sm text-primary font-medium">
                       {exp.period}
@@ -114,7 +114,7 @@ export const Experience = () => {
                     </p>
                     <div
                       className={`flex flex-wrap gap-2 mt-4 ${
-                        index % 2 === 0 ? "md:justify-end" : ""
+                        index % 2 === 0 ? "md:justify-start" : ""
                       }`}
                     >
                       {exp.techologies.map((tech, techIndex) => (
