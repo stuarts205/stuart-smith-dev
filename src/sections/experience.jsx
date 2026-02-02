@@ -13,6 +13,7 @@ const experiences = [
       "SQL Server",
       "JavaScript",
       "React",
+      "Next JS",
       "TypeScript",
       "Tailwind CSS",
       "HTML",
