@@ -5,6 +5,7 @@ import { Projects } from '@/sections/projects'
 import { Experience } from '@/sections/experience'
 import { Contact } from '@/sections/contact'
 import { Navbar } from '@/layout/navbar'
+import { Footer } from '@/layout/footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Experience />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
