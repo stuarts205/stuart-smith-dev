@@ -14,23 +14,22 @@ const footerLinks = [
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const title = '<stuart-smith.dev />';
 
   return (
     <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
 
-          {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="/" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">X</span>
+              {title}
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
+              © {currentYear} stuart-smith.dev. Built with React.
             </p>
           </div>
 
-          {/* Links */}
           <nav className="flex flex-wrap justify-center gap-6">
             {footerLinks.map((link) => (
               <a
@@ -43,7 +42,6 @@ export const Footer = () => {
             ))}
           </nav>
 
-          {/* Social Links */}
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
               <a
