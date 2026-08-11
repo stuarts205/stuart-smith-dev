@@ -175,6 +175,8 @@ export const Contact = () => {
                 type="submit"
                 size="lg"
                 disabled={isLoading}
+                data-webtrack-event="contact_click" 
+                data-webtrack-label="Contact Form Submit"
               >
                 {isLoading ? (
                   <>Sending... </>
