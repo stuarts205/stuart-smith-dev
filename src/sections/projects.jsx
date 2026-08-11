@@ -88,6 +88,8 @@ export const Projects = () => {
                     href={project.github}
                     target="_blank"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    data-webtrack-event="git_click" 
+                    data-webtrack-label={`GitHub Project Click ${project.title}`}
                   >
                     <Github className="h-5 w-5" />
                   </a>
