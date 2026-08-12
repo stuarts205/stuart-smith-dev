@@ -104,7 +104,7 @@ export const Hero = () => {
                 <a
                   data-webtrack-event="download_cv_click"
                   data-webtrack-label="Download CV Click"
-                  href="/cv.pdf"
+                  href="/stuart-smith-cv.pdf"
                   download
                   className="flex items-center justify-center gap-2"
                 >
