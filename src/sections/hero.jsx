@@ -101,7 +101,13 @@ export const Hero = () => {
               </a>
 
               <AnimatedBorderButton download>
-                <a href="/cv.pdf" download className="flex items-center justify-center gap-2">                 
+                <a
+                  data-webtrack-event="download_cv_click"
+                  data-webtrack-label="Download CV Click"
+                  href="/cv.pdf"
+                  download
+                  className="flex items-center justify-center gap-2"
+                >
                   <Download className="w-5 h-5" />
                   Download CV
                 </a>
