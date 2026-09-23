@@ -12,13 +12,13 @@ const projects = [
     github: "https://github.com/stuarts205/stu-tube",
   },
   {
-    title: "Portfolio Website",
+    title: "Personal Budget",
     description:
-      "My personal portfolio website built with React and TailwindCSS.",
-    image: "/portfolio.png",
-    tags: ["React", "TailwindCSS"],
-    link: "https://stuartsmith.dev/",
-    github: "https://github.com/stuarts205/stuart-smith-dev",
+      "A personal budget management app built with NextJs, Postgress, TailwindCSS, TypeScript.",
+    image: "/stuthis.png",
+    tags: ["NextJs", "Postgress", "TailwindCSS", "TypeScript"],
+    link: "https://stuthis.com/",
+    github: "https://github.com/stuarts205/personal-monthly-budget",
   },
   {
     title: "AI Chatbot",
@@ -37,7 +37,7 @@ const projects = [
     tags: ["NextJs", "Postgress", "TailwindCSS", "TypeScript"],
     link: "https://twothirtytwo.net/",
     github: "https://github.com/stuarts205/twothirtytwo",
-  },
+  },  
 ];
 
 export const Projects = () => {
