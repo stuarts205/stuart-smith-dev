@@ -115,7 +115,6 @@ export const Hero = () => {
             </div>
             <div className="flex items-center gap-4 animate-fade-in animation-delay-500">
               <span className="text-sm text-muted-foreground">Find me:</span>
-
               {[
                 { icon: Github, href: "https://github.com/stuarts205" },
                 {
