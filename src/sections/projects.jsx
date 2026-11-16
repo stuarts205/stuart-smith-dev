@@ -120,8 +120,17 @@ export const Projects = () => {
         </div>
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <AnimatedBorderButton>
-            <ArrowUpRight className="w-5 h-5" />
-            View All Projects
+            <a
+              href="https://github.com/stuarts205?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2"
+              data-webtrack-event="view_all_projects_click"
+              data-webtrack-label="View All Projects Click"
+            >
+              <ArrowUpRight className="w-5 h-5" />
+              View All Projects
+            </a>
           </AnimatedBorderButton>
         </div>
       </div>
