@@ -21,13 +21,13 @@ const projects = [
     github: "https://github.com/stuarts205/personal-monthly-budget",
   },
   {
-    title: "AI Chatbot",
+    title: "March Madness bracket",
     description:
-      "An AI-powered chatbot built with NextJs, TailwindCSS, TypeScript, AI.",
-    image: "/meetai.png",
+      "A March Madness bracket type of app built with NextJs, TailwindCSS, TypeScript, AI.",
+    image: "/basketball.png",
     tags: ["NextJs", "TailwindCSS", "TypeScript", "AI"],
-    link: "https://meetai-sable-pi.vercel.app/",
-    github: "https://github.com/stuarts205/meetai",
+    link: "https://seventeensixtyone.com/",
+    github: "https://github.com/stuarts205/basketball",
   },
   {
     title: "Family Pics",
